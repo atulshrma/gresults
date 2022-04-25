@@ -75,9 +75,6 @@ General instructions on _how_ to contribute can be found in the [CONTRIBUTING](C
 
 This project is licensed under the terms of the MIT license. See [LICENSE](LICENSE) for more details.
 
-
-----
-
 ## Citation
 
 ```
@@ -90,3 +87,9 @@ This project is licensed under the terms of the MIT license. See [LICENSE](LICEN
   howpublished = {\url{https://github.com/atulshrma/gresults}}
 }
 ```
+
+----
+
+## Credits and references
+
+1. Project that inspired this: https://github.com/blackblood/Resultify/tree/master
