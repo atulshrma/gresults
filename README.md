@@ -1,4 +1,9 @@
-# Go-Results
+<div align="center">
+
+<img src="https://github.com/atulshrma/gresults/raw/main/assets/images/gresults.svg" width="200" height="200" />
+<h1>Go-Results</h1>
+
+</div>
 
 `gresults` is an opinionated development framework that enables developers to build _trustless_ services, by having the caller define default return values and error handlers for all function calls.
 
