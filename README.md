@@ -97,4 +97,4 @@ This project is licensed under the terms of the MIT license. See [LICENSE](LICEN
 
 ## Credits and references
 
-1. Project that inspired this: https://github.com/blackblood/Resultify/tree/master
+1. Inspiration for parts of the project: [Resultify](https://github.com/blackblood/Resultify/tree/master)
