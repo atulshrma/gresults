@@ -7,6 +7,7 @@ import (
 type Result[T any, E any] interface {
 	OnError(errHandler func(err E)) Result[T, E]
 	Unwrap(defaultValue T) T
+	UnwrapAndThen(defaultValue T, closure func(data T) (T, E)) Result[T, E]
 }
 
 type result[T any, E any] struct {
@@ -45,6 +46,11 @@ func (res result[T, E]) Unwrap(defaultValue T) T {
 		return defaultValue
 	}
 	return *res.data
+}
+
+func (res result[T, E]) UnwrapAndThen(defaultValue T, closure func(data T) (T, E)) Result[T, E] {
+	data := res.Unwrap(defaultValue)
+	return Resultify[T, E](closure, data)
 }
 
 func NewResult[T any, E any](data *T, err *E) Result[T, E] {

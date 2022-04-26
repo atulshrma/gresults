@@ -56,3 +56,17 @@ func TestWrappedCallable(t *testing.T) {
 		t.Errorf("unwrap failed. got %q, wanted %q", got, want)
 	}
 }
+
+func TestUnwrapChaining(t *testing.T) {
+	want := -42
+	wrappedAtoiResult := Resultify[int, error](strconv.Atoi, "-42")
+	errorHandler := func(err error) {
+		t.Errorf("got err %q, wanted nil", err)
+	}
+	wrappedAtoiResult.OnError(errorHandler).UnwrapAndThen(0, func(got int) (i int, e error) {
+		if got != want {
+			t.Errorf("unwrap failed. got %q, wanted %q", got, want)
+		}
+		return
+	})
+}
