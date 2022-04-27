@@ -17,3 +17,18 @@ We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 
 ### Fixed
 - Nothing.
+
+## 0.2.0 - 2022-04-27
+
+### Added
+- Support for unwrap chaining
+- Unit tests for the features listed above
+
+### Deprecated
+- Nothing.
+
+### Removed
+- Nothing.
+
+### Fixed
+- Nothing.
