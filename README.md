@@ -2,7 +2,14 @@
 
 <img src="https://github.com/atulshrma/gresults/raw/main/assets/images/gresults.svg" width="200" height="200" />
 <h1>Go-Results</h1>
-
+<p align="center">
+   <a href="https://goreportcard.com/report/atulshrma/gresults"><img src="https://goreportcard.com/badge/github.com/atulshrma/gresults"></a>
+   <a href="#"><img src="https://img.shields.io/github/go-mod/go-version/atulshrma/gresults"></a>
+   <!-- <a href="https://codecov.io/gh/atulshrma/gresults"><img src="https://codecov.io/gh/atulshrma/gresults/branch/main/graph/badge.svg"/></a> -->
+   <a href="https://github.com/atulshrma/gresults/releases"><img src="https://img.shields.io/github/v/tag/atulshrma/gresults?label=version&sort=semver"></a>
+   <a href="LICENSE"><img src="https://img.shields.io/github/license/atulshrma/gresults"></a>
+<br>
+</p>
 </div>
 
 `gresults` is an opinionated development framework that enables developers to build _trustless_ services, by having the caller define default return values and error handlers for all function calls.
